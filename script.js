@@ -17,33 +17,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Apply fade-in to sections
+// Apply interactions
 document.addEventListener('DOMContentLoaded', () => {
-    // Add fade-in class to elements
-    const fadeElements = document.querySelectorAll('.feature, .process-step, .why-point, .pricing-card');
-
-    fadeElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-        observer.observe(el);
-    });
-
     // Parallax effect for hero section
     const hero = document.querySelector('.hero');
     let ticking = false;
@@ -74,9 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentScroll = window.pageYOffset;
 
         if (currentScroll > 50) {
-            nav.style.boxShadow = '0 2px 20px rgba(253, 185, 19, 0.2)';
+            nav.style.boxShadow = '0 2px 20px rgba(230, 57, 70, 0.2)';
         } else {
-            nav.style.boxShadow = '0 2px 20px rgba(253, 185, 19, 0.15)';
+            nav.style.boxShadow = '0 2px 20px rgba(230, 57, 70, 0.12)';
         }
 
         lastScroll = currentScroll;
@@ -115,9 +90,27 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => ripple.remove(), 600);
         });
     });
+
+    // Subtle animation for approach numbers on scroll
+    const approachNumbers = document.querySelectorAll('.approach-number');
+    const numberObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateX(0)';
+            }
+        });
+    }, observerOptions);
+
+    approachNumbers.forEach((num) => {
+        num.style.opacity = '0';
+        num.style.transform = 'translateX(-30px)';
+        num.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        numberObserver.observe(num);
+    });
 });
 
-// Add CSS for ripple effect dynamically
+// Add CSS for ripple effect and stat hover dynamically
 const style = document.createElement('style');
 style.textContent = `
     .cta-button {
@@ -128,7 +121,7 @@ style.textContent = `
     .ripple {
         position: absolute;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.6);
         transform: scale(0);
         animation: ripple-animation 0.6s ease-out;
         pointer-events: none;

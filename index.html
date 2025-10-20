@@ -1,173 +1,411 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="et">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koodikool - Õpi programmeerima koos AI-ga</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">koodikool</div>
-            <a href="#" class="cta-button">Liitu tasuta tunniga</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Koodikool - Õpi mõtlema</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <div class="logo">koodikool</div>
+                <a href="#" class="nav-cta">Registreeri tasuta tundi</a>
+            </nav>
+        </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Õpi programmeerima <span class="highlight">koos AI-ga</span></h1>
-                <p class="hero-subtitle">Täiskasvanutele ja gümnaasiumiõpilastele, kes tahavad muuta ideed tööks</p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">2h</span>
-                        <span class="stat-label">nädalas</span>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Õpi mõtlema</h1>
+                    <p class="hero-subtitle">
+                        Programmeerimine ei ole lihtsalt kood.<br />See on viis
+                        mõista süsteeme ja mõelda loogiliselt.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">1h</span>
+                            <span class="stat-label">nädalas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30€</span>
+                            <span class="stat-label">kuus</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1. tund</span>
+                            <span class="stat-label">tasuta</span>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">30€</span>
-                        <span class="stat-label">kuus</span>
+                    <a href="#" class="cta-button large"
+                        >Registreeri tasuta tundi</a
+                    >
+                </div>
+            </section>
+
+            <!-- Who This Is For -->
+            <section class="content-section alt">
+                <div class="container">
+                    <h2>Kellele see sobib?</h2>
+                    <div class="intro-text">
+                        <p class="lead">
+                            Kursus sobib kõige paremini 16–50-aastastele, kes
+                            tahavad õppida päris programmeerimist.
+                        </p>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">1. tund</span>
-                        <span class="stat-label">tasuta</span>
+                    <div class="thinking-grid">
+                        <div class="thinking-card">
+                            <h3>Gümnaasiumiõpilastele</h3>
+                            <p>
+                                Kui soovid mõista tehnoloogiat sügavamalt või
+                                kaalud tulevikus programmeerimisega seotud
+                                valdkonda – alusta siin.
+                            </p>
+                        </div>
+                        <div class="thinking-card">
+                            <h3>Täiskasvanutele</h3>
+                            <p>
+                                Pole kunagi hilja õppida. Kas sa tahad karjääri
+                                muuta, luua oma projekte või lihtsalt mõista,
+                                kuidas digimaailm töötab – alusta täna.
+                            </p>
+                        </div>
+                        <div class="thinking-card">
+                            <h3>Vibe coder / ettevõtja</h3>
+                            <p>
+                                Sa juba ehitad AI-ga rakendusi? Ilmselt jäid
+                                mingi hetk kinni, kus AI enam ei suuda edasi
+                                minna ilma, et äpp kokku ei variseks. Siis on
+                                viimane aeg endale algtõed selgeks teha.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="cta-button large">Alusta tasuta tunniga</a>
-            </div>
-        </section>
+            </section>
 
-        <!-- What You'll Learn -->
-        <section class="content-section">
-            <div class="container">
-                <h2>Mida sa õpid?</h2>
-                <div class="features">
-                    <div class="feature">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI tööriistad praktikas</h3>
-                        <p>Tutvume AI-põhiste arendusvahenditega nagu Lovable ja teised. Õpid neid tõhusalt kasutama ja mõistad nende võimalusi.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">💡</div>
-                        <h3>Ehita päris rakendusi</h3>
-                        <p>Juba esimesel tunnil teeme koos valmis rakenduse. Näed, kuidas ideest saab tööks vaid tundidega.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Programmeerimine põhjalikult</h3>
-                        <p>Mõistad, kuidas kood päriselt töötab. Õpid põhimõtteid, mis teevad sinust ja AI-st võimsa meeskonna.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Karjäär tulevikus</h3>
-                        <p>Programmeerimine pole kadumas. Õpid oskusi, mis hoiavad sind ees nii tööturul kui ka oma projektides.</p>
+            <!-- Why Thinking Matters -->
+            <section class="content-section">
+                <div class="container">
+                    <h2>Mõtlemine on oskus</h2>
+                    <div class="intro-text">
+                        <p class="lead">
+                            Enamik meist usub, et oskab loogiliselt mõelda.
+                        </p>
+                        <p class="lead">
+                            Aga see ei ole jah või ei vastus. See on muskel,
+                            mida tuleb treenida.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- How It Works -->
-        <section class="content-section alt">
-            <div class="container">
-                <h2>Kuidas see töötab?</h2>
-                <div class="process">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <h3>Iganädalane videosessioon</h3>
-                        <p>Üks kord nädalas kohtume videos, kus õpime uusi teemasid ja lahendame küsimusi koos.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <h3>Iseseisev töö</h3>
-                        <p>Ülejäänud aeg on iseseisvateks ülesanneteks ja projektidele – umbes 2 tundi nädalas kokku.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <h3>Tugi ja tagasiside</h3>
-                        <p>Kui jääd hätta, saad abi. Meie kogukond ja õpetaja on alati abiks.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Learn Coding with AI -->
-        <section class="content-section">
-            <div class="container">
-                <h2>Miks programmeerida AI ajastul?</h2>
-                <div class="why-section">
-                    <div class="why-content">
-                        <p class="lead">AI muudab programmeerimist, aga see ei tähenda, et programmeerimine kaob.</p>
-                        <div class="why-points">
-                            <div class="why-point">
-                                <span class="check">✓</span>
-                                <div>
-                                    <strong>AI vajab suunist</strong>
-                                    <p>AI teeb seda, mida sa käsid. Aga ilma põhiteadmisteta ei tea sa, mida käskida ega kuidas vigu parandada.</p>
-                                </div>
+            <!-- What You Learn -->
+            <section class="content-section alt">
+                <div class="container">
+                    <h2>Mida me teeme?</h2>
+                    <div class="approach">
+                        <div class="approach-item">
+                            <div class="approach-number">01</div>
+                            <div class="approach-content">
+                                <h3>Saame videokõnes kokku</h3>
+                                <p>
+                                    Iga nädal kohtume online. Räägime, arutleme,
+                                    lahendame probleeme koos.
+                                </p>
                             </div>
-                            <div class="why-point">
-                                <span class="check">✓</span>
-                                <div>
-                                    <strong>Põhioskused teevad võimsaks</strong>
-                                    <p>Kui mõistad, kuidas kood töötab, oskad AI-ga koos luua keerulisemaid lahendusi ja parandada vigu kiiresti.</p>
-                                </div>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-number">02</div>
+                            <div class="approach-content">
+                                <h3>Õpime põhitõdesid</h3>
+                                <p>
+                                    Praktilised harjutused koodi kirjutamisega,
+                                    millega saame aluse selgeks. Mõistad, kuidas
+                                    asjad töötavad, mitte ei järgi pimesi
+                                    juhiseid.
+                                </p>
                             </div>
-                            <div class="why-point">
-                                <span class="check">✓</span>
-                                <div>
-                                    <strong>Programmeerimine pole kadumas</strong>
-                                    <p>Vaata <a href="https://tinkr.tech" target="_blank" rel="noopener">tinkr.tech</a> põhjendusi – programmeerijaid vajatakse tulevikus rohkemgi, mitte vähem.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-number">03</div>
+                            <div class="approach-content">
+                                <h3>Teeme projekte</h3>
+                                <p>
+                                    Projekt on see, kus sa päriselt õpid mõtlema
+                                    ja süsteemi planeerima. Kõik siiani oli vaid
+                                    ettevalmistus. Teed ise valmis mõne
+                                    veebirakenduse, millest võib isegi kasu olla
+                                    su koolis, tööl või hobis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Section -->
+            <section class="content-section">
+                <div class="container">
+                    <h2>Miks programmeerida AI ajastul?</h2>
+                    <div class="ai-section">
+                        <div class="ai-content">
+                            <p class="ai-lead">
+                                Kui AI oskab koodi kirjutada, miks peaks inimene
+                                õppima programmeerima?
+                            </p>
+                            <div class="ai-answer">
+                                <div class="ai-point">
+                                    <span class="ai-icon">→</span>
+                                    <div>
+                                        <strong
+                                            >AI kirjutab, sina mõtled</strong
+                                        >
+                                        <p>
+                                            AI suudab kirjutada koodi, mida sa
+                                            käsid. Aga sina pead teadma, mida
+                                            käskida. Pead nägema probleemi,
+                                            mõistma süsteemi ja suunama AI-d.
+                                            Ilma mõtlemisoskuseta oled pimedas.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ai-point">
+                                    <span class="ai-icon">→</span>
+                                    <div>
+                                        <strong>Kriitiline hindamine</strong>
+                                        <p>
+                                            AI teeb vigu. Kui sa ei mõista,
+                                            kuidas kood töötab, ei oska sa
+                                            hinnata, kas AI pakutud lahendus on
+                                            hea või halb. Sa pead oskama
+                                            kriitiliselt analüüsida.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ai-point">
+                                    <span class="ai-icon">→</span>
+                                    <div>
+                                        <strong>Sõltumatu mõtlemine</strong>
+                                        <p>
+                                            Mida rohkem AI teeb sinu eest, seda
+                                            olulisem on sul ise mõelda.
+                                            Programmeerimine õpetab sind mõtlema
+                                            süsteemselt – see on oskus, mida AI
+                                            ei asenda.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ai-point">
+                                    <span class="ai-icon">→</span>
+                                    <div>
+                                        <strong>Tööturg</strong>
+                                        <p>
+                                            Kas sa tunned mõnda töötut
+                                            programmeerijat? Mina ka mitte. Kas
+                                            neil on palgad langenud? Ei tea, et
+                                            oleks. AI kiirendab tööd, mitte ei
+                                            asenda. Mõtle loogiliselt, kui AI on
+                                            treenitud inimeste kirjutatud koodi
+                                            pealt, siis kuidas ta saab olla
+                                            parem kui inimene? Progejad
+                                            kasutavad seda igapäevaselt, aga
+                                            töömaht ikkagi ei kipu vähenema.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Pricing -->
-        <section class="content-section pricing-section">
-            <div class="container">
-                <h2>Lihtne ja selge</h2>
-                <div class="pricing-card">
-                    <div class="price">
-                        <span class="price-amount">30€</span>
-                        <span class="price-period">/kuus</span>
+            <!-- Comparison -->
+            <section class="content-section alt">
+                <div class="container">
+                    <h2>Vali omale parim kursus</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h3>Ülikool</h3>
+                            <p>
+                                Väga hea, kui sul on 3+ aastat aega ja tahad
+                                õppida kõrvalisi aineid.
+                            </p>
+                        </div>
+                        <div class="comparison-item">
+                            <h3>Kood/Jõhvi</h3>
+                            <p>
+                                Super, kui talud stressi ja saad töölt vabaks.
+                            </p>
+                        </div>
+                        <div class="comparison-item">
+                            <h3>ValiIT intensiivkoolitus</h3>
+                            <p>
+                                Fokusseeritud, aga kallis (2499€) ja pead töölt
+                                vabaks saama.
+                            </p>
+                        </div>
+                        <div class="comparison-item">
+                            <h3>Lühikoolitused</h3>
+                            <p>
+                                Maksavad sadu eurosid, aga katavad väga vähe
+                                teemasid.
+                            </p>
+                        </div>
+                        <div class="comparison-item">
+                            <h3>Programmeerimine maalähedaselt</h3>
+                            <p>
+                                Osalejad märgivad, et tegelikult nad selgeks ei
+                                saanud.
+                            </p>
+                        </div>
+                        <div class="comparison-item">
+                            <h3>Muud materjalid internetis</h3>
+                            <p>
+                                Reaalsuses on sul vaja tuge, et oleks
+                                motivatsiooni ja kinni ei jääks.
+                            </p>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
-                        <li>Iganädalased videosessioonid</li>
-                        <li>Iseseisvad ülesanded ja projektid</li>
-                        <li>Tugi ja tagasiside kogukonnalt</li>
-                        <li>Ligipääs kõikidele materjalidele</li>
-                        <li>~2 tundi nädalas ajakulu</li>
-                    </ul>
-                    <div class="free-trial">
-                        <strong>Esimene tund tasuta!</strong>
-                        <p>Proovi enne, kui otsustad. Näeme, kuidas AI-ga rakendus teha ja selgitame täpsemalt, mida õpid.</p>
+                    <div class="comparison-highlight">
+                        <h3>Koodikool</h3>
+                        <ul>
+                            <li>Õpid siis kui aega on</li>
+                            <li>Saame iganädalaselt videos kokku</li>
+                            <li>
+                                Õpetaja on chatis alati saadaval (koos teiste
+                                õpilastega)
+                            </li>
+                            <li>Hind on ebareaalselt väike</li>
+                            <li>
+                                Õppematerjal on põhjalik, praktiline ja
+                                rakendatav su töös
+                            </li>
+                        </ul>
                     </div>
-                    <a href="#" class="cta-button large">Registreeru tasuta tunnile</a>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Final CTA -->
-        <section class="final-cta">
+            <!-- Teacher Section -->
+            <section class="content-section">
+                <div class="container">
+                    <h2>Kes õpetab?</h2>
+                    <div class="teacher-section">
+                        <div class="teacher-content">
+                            <p class="teacher-text">
+                                Ma olen programmeerinud rohkem kui 10 aastat.
+                                Olen ka õpetanud terve oma karjääri. IT
+                                Kolledžis, ValiIT-s ja posu koolitusi. Alati
+                                algajaid. Kuigi programmeerimise õppimine ongi
+                                keeruline, kasutatakse minu arust aegunud
+                                võtteid, et seda õpetada. Praegu olen
+                                Polütehnikumis väikese koormusega, et seal taset
+                                tõsta. Muidu olen vabakutseline programmeerija
+                                ja teen koostööd tuntud ettevõtetega Eestis.
+                                Programmeerimise aluste õpetamine võimalikult
+                                intuitiivsel viisil on saanud mu eesmärgiks,
+                                mille nimel iga aasta pingutan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing -->
+            <section class="content-section pricing-section">
+                <div class="container">
+                    <h2>Lihtne ja läbipaistev</h2>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h3>Õpilased ja alaealised</h3>
+                            <div class="price">
+                                <span class="price-amount">30€</span>
+                                <span class="price-period">/kuus</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>1 tund nädalas videokõnes</li>
+                                <li>Iseseisvad harjutused ja projektid</li>
+                                <li>Ligipääs kogukonnale ja õpetajale</li>
+                                <li>Kõik materjalid ja ressursid</li>
+                                <li>AI tööriistad toetavad õppimist</li>
+                            </ul>
+                            <a href="#" class="cta-button">Alusta täna</a>
+                        </div>
+                        <div class="pricing-card">
+                            <h3>Täiskasvanud</h3>
+                            <div class="price">
+                                <span class="price-amount">50€</span>
+                                <span class="price-period">/kuus</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>1 tund nädalas videokõnes</li>
+                                <li>Iseseisvad harjutused ja projektid</li>
+                                <li>Ligipääs kogukonnale ja õpetajale</li>
+                                <li>Kõik materjalid ja ressursid</li>
+                                <li>AI tööriistad toetavad õppimist</li>
+                            </ul>
+                            <a href="#" class="cta-button">Alusta täna</a>
+                        </div>
+                    </div>
+                    <div class="free-trial">
+                        <strong>Esimene tund tasuta</strong>
+                        <p>
+                            Tutvume, kuidas internet töötab ja hakkame kohe
+                            harjutusi tegema. Proovi enne, kui otsustad jätkata.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why So Cheap -->
+            <section class="content-section alt">
+                <div class="container">
+                    <h2>Kuidas selline hind?</h2>
+                    <div class="intro-text">
+                        <p class="lead">
+                            Teised kursused küsivad sadu või ka tuhandeid
+                            eurosid rohkem.
+                        </p>
+                        <p>
+                            Olen seda platvormi ehitanud päris palju aastaid,
+                            ilma, et keegi oleks selle kinni maksnud. Samal ajal
+                            näen kõrvalt, kuidas teised ettevõtted loovad
+                            kergekäeliselt kursuseid ja teenivad raha. Minu
+                            eesmärk on aga luua kõige paremad võimalused
+                            programmeerimise õppimiseks. Seda nii
+                            täiskasvanutele kui ka koolidele.
+                        </p>
+                        <p>
+                            Selleks, et kulusid madalal hoida on Koodikool on
+                            suuresti iseseisev õpe. Meil on iganädalane
+                            kohtumine, chat, AI tugi ja muidugi väga hea
+                            interaktiivne platvorm. Aga täiskohaga koolitajaid
+                            siin ei ole, et õpe oleks kõigile soovijatele
+                            kättesaadav.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <section class="final-cta">
+                <div class="container">
+                    <h2>Ära ole AI abiline. Ole ehitaja.</h2>
+                    <p>
+                        Maailm jaguneb kaheks: need, kes mõistavad süsteeme, ja
+                        need, kes loodavad, et AI aitab hädast välja.<br />
+                        Sina vali, kummaks sa saad.
+                    </p>
+                    <a href="#" class="cta-button large">Alusta täna</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
             <div class="container">
-                <h2>Valmis alustama?</h2>
-                <p>Liitu meie esimese tasuta tunniga ja näe ise, kuidas AI ja programmeerimine töötavad käsikäes.</p>
-                <a href="#" class="cta-button large">Liitu kohe</a>
+                <p>&copy; 2025 koodikool.ee – Õpi mõtlema loogiliselt</p>
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 koodikool.ee – Õpi programmeerima targalt</p>
-            <p>Vaata ka: <a href="https://tinkr.tech" target="_blank" rel="noopener">tinkr.tech</a></p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
