@@ -409,7 +409,7 @@ nav {
 
 .teacher-section h3 {
     font-family: 'Crimson Pro', serif;
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--text-dark);
@@ -418,14 +418,9 @@ nav {
 
 .teacher-text {
     text-align: left;
-    background: var(--bg-white);
-    padding: 2.5rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px var(--shadow);
-    border-left: 4px solid var(--sunset-orange);
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--text-light);
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--text-medium);
 }
 
 .teacher-links {
